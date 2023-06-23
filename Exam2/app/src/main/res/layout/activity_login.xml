@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.Login_activity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/green3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/picture" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21.2dp"
+        android:text="Welcome to"
+        android:textColor="#22215B"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="Bookie"
+        android:textColor="#22215B"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginHorizontal="26dp"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:text="Best book storage platform for all business and individuals to whose like to read and share"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Your login"
+        android:textColor="#1B1D28"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="39dp"
+        android:background="@drawable/rectangle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        android:text="Your Password"
+        android:textColor="#1B1D28"
+        android:textSize="16sp" />
+
+    <EditText
+
+        android:id="@+id/edit_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="39dp"
+        android:background="@drawable/rectangle" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:background="@drawable/rectangle2"
+        android:layout_width="match_parent"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="39dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginBottom="32dp"/>
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:gravity="center"
+        android:layout_marginBottom="28dp"
+        android:textColor="#1B1D28"
+        android:textSize="16sp"/>
+</LinearLayout>

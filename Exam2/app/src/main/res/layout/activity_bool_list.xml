@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.book_list.BoolList_activity">
+    <ScrollView
+        android:layout_marginTop="143dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="51dp"
+        android:layout_marginBottom="122.85dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/book_list_backround"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/power"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="17.5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="17.5dp"
+        android:textSize="20sp"
+        android:textColor="#352555"
+        android:textStyle="bold"
+        android:text="Book list"/>
+    <ImageView
+        android:layout_width="115.89dp"
+        android:layout_height="65.78dp"
+        android:layout_marginTop="67.5dp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="31.11dp"
+        android:src="@drawable/cloud"/>
+    <ImageView
+        android:layout_width="115.89dp"
+        android:layout_height="65.78dp"
+        android:layout_marginTop="173.5dp"
+        android:layout_gravity="top"
+        android:layout_marginStart = "31dp"
+        android:src="@drawable/cloud"/>
+
+    <LinearLayout
+
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#352555"
+            android:layout_width="196dp"
+            android:layout_height="55dp"
+            android:text="Sorry there is not any books yet"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rasm"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btnAdd"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="31.74dp"
+        android:layout_marginBottom="33.85dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/add"/>
+</FrameLayout>

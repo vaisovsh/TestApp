@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DragDropAndTest</string>
+    <string name="show_answer">show answer</string>
+    <string name="next_puzzle">next puzzle</string>
+</resources>

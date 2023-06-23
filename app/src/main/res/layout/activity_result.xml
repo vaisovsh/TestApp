@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backa_main"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5">
+
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="268dp"
+           >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:text="Test finished!!!"
+                android:textColor="#F1DB1C"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/wrongAns"
+                android:layout_width="78dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/red"
+                android:gravity="center_horizontal"
+                android:text="234"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="@+id/correctAns"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/appCompatTextView2"
+                app:layout_constraintTop_toBottomOf="@+id/correctAns" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="78dp"
+                android:layout_height="48dp"
+                android:id="@+id/skipAns"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:text="234"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="@+id/wrongAns"
+                app:layout_constraintHorizontal_bias="0.887"
+                app:layout_constraintStart_toEndOf="@+id/appCompatTextView3"
+                app:layout_constraintStart_toStartOf="@+id/wrongAns"
+                app:layout_constraintTop_toBottomOf="@+id/wrongAns" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/correctAns"
+                android:layout_width="78dp"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="8763"
+                android:textColor="@color/true_ans"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.829"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView2"
+                android:layout_width="168dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="wrong count"
+                android:gravity="center_horizontal"
+                android:textSize="28sp"
+                android:textColor="@color/red"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/appCompatTextView"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                android:layout_width="168dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:text="corrent count"
+                android:textColor="@color/true_ans"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toStartOf="@+id/correctAns"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView3"
+                android:layout_width="168dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="skip counts: "
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/appCompatTextView2"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="restart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/refresh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Main"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

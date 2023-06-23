@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/mathback"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Start">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/drag"
+       />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnstart"
+        android:layout_width="300dp"
+        android:layout_marginTop="24dp"
+        android:layout_height="54dp"
+        android:background="#AFCF8A"
+        android:textStyle="bold"
+        android:text="start game"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRecord"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="14dp"
+        android:background="#AFCF8A"
+        android:textStyle="bold"
+        android:text="about" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitbtn"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:background="#AFCF8A"
+        android:layout_marginTop="14dp"
+        android:textStyle="bold"
+        android:text="exit"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
